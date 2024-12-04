@@ -1,4 +1,4 @@
-# Full-Stack Movie Recommendation
+# Full-Stack Movie Search App
 
 This project contains both the frontend and backend of a full-stack movie recommendation application.
 
