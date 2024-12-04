@@ -1,0 +1,85 @@
+/* Container for movie cards */
+.movie-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    position: relative;
+  }
+  
+  /* Movie card styling */
+  .movie-card {
+    width: 200px;
+    height: 300px;
+    position: relative;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out; /* Smooth scaling effect */
+    cursor: pointer;
+    z-index: 1; /* Makes sure the card sits on top when hovered */
+    display: flex;
+    flex-direction: column; /* Arrange content vertically */
+    justify-content: center; /* Center the content */
+    position: relative; /* Allow absolute positioning inside */
+  }
+  
+  /* Poster image */
+  .movie-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+    transition: all 0.3s ease-in-out;
+    z-index: 0; /* Make sure the poster is the background */
+  }
+  
+  /* Hover effect: dull the poster and reveal details */
+  .movie-card:hover img {
+    filter: brightness(50%); /* Dull the poster */
+  }
+  
+  /* Movie details overlay */
+  .movie-card-details {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.6); /* Dark overlay for better visibility */
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    opacity: 0; /* Start with hidden details */
+    transition: opacity 0.3s ease;
+    padding: 10px;
+    box-sizing: border-box;
+    text-align: center;
+    z-index: 1; /* Make sure the details are above the image */
+  }
+  
+  /* Make details visible when the card is hovered */
+  .movie-card:hover .movie-card-details {
+    opacity: 1; /* Show the details */
+  }
+  
+  /* Styling the details (Title, Type, Year, IMDb ID) */
+  .movie-card-details h4, .movie-card-details p {
+    margin: 5px;
+    font-size: 14px;
+    font-weight: normal;
+    word-wrap: break-word; /* Ensure text wraps properly within the card */
+  }
+  
+  .movie-card-details h4 {
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  .movie-card img {
+    pointer-events: auto;
+}

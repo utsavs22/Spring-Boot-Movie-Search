@@ -1,0 +1,16 @@
+# Backend-specific ignores
+/target/
+*.log
+**/.*.swp
+.idea/
+
+# Frontend-specific ignores
+/node_modules/
+build/
+dist/
+*.log
+
+# OS-specific ignores
+.DS_Store
+Thumbs.db
+
