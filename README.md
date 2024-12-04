@@ -11,7 +11,6 @@ This project contains both the frontend and backend of a full-stack movie recomm
 
 - **Frontend**: React, JavaScript
 - **Backend**: Spring Boot, Java
-- **Database**: (Add any database if applicable)
 
 ## Setup Instructions
 
