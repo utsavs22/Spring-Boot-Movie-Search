@@ -17,8 +17,7 @@ This project is a movie recommendation system that helps users find movies even 
 
 - **Frontend**: React, JavaScript
 - **Backend**: Spring Boot, Java
-- **Database/API**: (Add any database or third-party APIs used, e.g., OMDB API)
-- **Search Engine**: (Add if applicable, e.g., Elasticsearch for searching)
+- **API**: OMDB API
 
 ## Setup Instructions
 
